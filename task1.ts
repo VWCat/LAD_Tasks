@@ -43,8 +43,7 @@ let dictionary = {
 };
 
 for (let day in dictionary) {
-    console.log(day, dictionary[day]);
-    let pos = -1;
+  let pos = -1;
 
   while ((pos = str.indexOf(day, pos + 1)) != -1) {
     str = str.slice(0, pos) + dictionary[day] + str.slice(pos + day.length);

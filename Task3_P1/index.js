@@ -1,4 +1,4 @@
-const consoleInput = require("readline-sync");
+import consoleInput from "readline-sync";
 
 let target = "";
 let userInput = "";
@@ -31,7 +31,7 @@ while (tries > 0) {
 Попыток осталось: ${tries}.
 Введите число из ${difficulty} разных цифр: `
   );
-  console.log(userInput);
+
   if (
     !userInput.match(/^\d+/) ||
     userInput.length !== difficulty ||

@@ -49,16 +49,12 @@ while (magician.maxHealth > 0 && monster.maxHealth > 0) {
     el.movesToReady = el.movesToReady ? el.movesToReady - 1 : 0;
   });
   console.clear();
-  console.log(`ROUND ${round}! FIGHT!!!`);
   console.log(
-    "\nТекущий уровень здоровья:\n" +
-      magician.name +
-      ": " +
-      magician.maxHealth.toFixed(2) +
-      "; " +
-      monster.name +
-      ": " +
-      monster.maxHealth.toFixed(2)
+    `ROUND ${round}! FIGHT!!!\nТекущий уровень здоровья:\n${
+      magician.name
+    }: ${magician.maxHealth.toFixed(2)}; ${
+      monster.name
+    }: ${monster.maxHealth.toFixed(2)}\n`
   );
   // Ход монстра
   do {
